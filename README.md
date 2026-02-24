@@ -20,6 +20,7 @@ To setup, the global script that I created, it has been implemented at the proje
 The project has the part of the Client and Server, for running everything, there is the following command:
 ```bash
 cd cv-platform
+npm run install:all
 npm install
 ```
 
