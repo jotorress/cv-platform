@@ -75,4 +75,4 @@ Here, there are the roles that exist on the project:
 * `/server/uploads`: Local storage for profile pictures.
 
 ## What's next?
-The idea for the future is to implement this project for a portfolio CV, with a frontend with a lot of animations and interesting for the view of everybody.
+The idea for the future is to implement this project for a portfolio CV, with an interface featuring lots of animations that will appeal to all audiences, which I can use to present my projects and my profile in general.
