@@ -60,7 +60,7 @@ Here, there are the roles that exist on the project:
 
 * **Candidate**: Can register, log in, manage their professional profile (including photo upload), and receive notifications.
 * **Recruiter**: Can browse the talent directory, filter candidates by skills/name, and send contact interests, also they can edit the profile.
-* **Admin**: Full access to all platform.
+* **Admin**: Full access to all the users in the platform.
 
 ### Security Features
 
