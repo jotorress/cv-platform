@@ -1,6 +1,6 @@
 
 # CV Platform - Secure RBAC System 
-The idea for this project is to create a CV platform with Role-Based Access Control (RBAC) system. 
+The idea for this project is to create a **CV platform** with Role-Based Access Control (RBAC) system. 
 
 It ensures secure data management and profile visualization for candidates and recruiters who are going to be the users of the platform.
 
@@ -74,6 +74,26 @@ Here, there are the roles that exist on the project:
 * `/client`: React.js Frontend.
 * `/server`: Node.js/Express Backend.
 * `/server/uploads`: Local storage for profile pictures.
+
+## Testing RBAC
+
+- Using a token for a user "Candidate" trying to show all the users
+![alt text](GET-user-info.png)
+
+- Now, when we are the admin, it shows all the user's information
+![alt text](GET-admin-info.png)
+
+- A recruiter searching all the candidates users
+![alt text](GET-candidate-listusers.png)
+
+- If we trying to use the token of one candidate with this webpage `jwt.io`
+![alt text](JWT-decoder.png)
+    And then we edit the token to force to be a "Admin"
+    ![alt text](JWT-encoder-admin.png)
+    The server blocked the request `400 Bad Request - Invalid Token` because the cryptographic signature no longer matched
+    ![alt text](CHECK-newtoken.png)
+
+**Conclusion**: The RBAC system is fully secure and impenetrable after the differents tests.
 
 ## What's next?
 The idea for the future is to implement this project for a portfolio CV, with an interface featuring lots of animations that will appeal to all audiences, which I can use to present my projects and my profile in general.
