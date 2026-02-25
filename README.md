@@ -37,7 +37,7 @@ npm start
 * **Frontend**: `http://localhost:3000`
 * **Backend API**: `http://localhost:5000`
 
-## Prerequisites
+## Prerequisites - Important !
 
 ### Requirements
 
@@ -51,7 +51,6 @@ The project uses **Sequelize ORM**. It will synchronize and create the tables up
 1. Create a PostgreSQL database (e.g., `cv_platform_db`).
 2. Navigate to `server/config/config.json`.
 3. Update the `username`, `password`, and `database` fields with your credentials.
-
 
 ## RBAC
 
