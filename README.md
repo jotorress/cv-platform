@@ -52,6 +52,17 @@ The project uses **Sequelize ORM**. It will synchronize and create the tables up
 2. Navigate to `server/config/config.json`.
 3. Update the `username`, `password`, and `database` fields with your credentials.
 
+```javascript
+{
+  "development": {
+    "username": "userOfYourDB",
+    "password": "passwordOfYourDB",
+    "database": "nameofDataBase",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
+```
 ## RBAC
 
 The system handles access through secure middlewares, for that case, I used JWT Token verification with the Role validation for testing every breach of security.
@@ -74,6 +85,19 @@ Here, there are the roles that exist on the project:
 * `/server`: Node.js/Express Backend.
 * `/server/uploads`: Local storage for profile pictures.
 
+## Additional info about users
+Into the project, there are three users created in the file  `/server/server.js` for testing every view and each access, the password is `password123` for each them :
+* admin@test.com
+* recruiter@test.com
+* candidate@test.com
+
+![alt text](USERS.png)
+
+### Creating a new user
+When we run the project, this is the first page that we will see:
+![alt text](SignIn.png)
+There is the option to **Sign Up**, where is possible to choose the role "Candidate" and "Recruiter" and create the account:
+![alt text](CreateAccount.png)
 ## Testing RBAC
 
 - Using a token for a user "Candidate" trying to show all the users
@@ -92,7 +116,7 @@ Here, there are the roles that exist on the project:
     The server blocked the request `400 Bad Request - Invalid Token` because the cryptographic signature no longer matched
     ![alt text](CHECK-newtoken.png)
 
-**Conclusion**: The RBAC system is fully secure and impenetrable after the differents tests.
+**Conclusion**: The RBAC system is secure and impenetrable after the differents tests.
 
 ## What's next?
-The idea for the future is to implement this project for a portfolio CV, with an interface featuring lots of animations that will appeal to all audiences, which I can use to present my projects and my profile in general.
+The idea for the future is to implement this project for a portfolio CV, with an interface featuring lots of animations that will appeal to all audiences, which I can use to present my projects and my profile in general, looking for jobs.
